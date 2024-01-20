@@ -26,6 +26,10 @@ document.querySelector('.btn').addEventListener('click', async function (){
     if (data.success) {
       const displayContainer = document.querySelector('.display-container')
       displayContainer.textContent = data
+
+      fetch('/', (req, res) => {
+        method: 'GET'
+      })
     } else {
       // Display an error message
       alert('Error generating README:\n\n' + data.error);

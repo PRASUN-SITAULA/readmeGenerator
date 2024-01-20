@@ -3,7 +3,6 @@ const OpenAI = require("openai");
 const express = require('express');
 const bodyParser = require('body-parser');
 
-
 require('dotenv').config()
 
 
@@ -16,10 +15,18 @@ const openai = new OpenAI({
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
 
+app.use(express.static('public'));
+app.use('/css',express.static(__dirname + '/public/css'))
+app.use('/js',express.static(__dirname + '/public/js'))
+
+
+
+
+
+app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/');
+  res.render('index', {readmeFile: ''})
 });
   
 
@@ -35,9 +42,8 @@ app.post('/generate-readme', (req, res) => {
     });
     const readmeContent = data.choices[0].message.content;
     console.log(readmeContent)
-    res.json({ success: true, readmeContent: readmeContent });
+  res.render('index', { success: true, readmeFile: readmeContent })
   }
-
   generateReadme(description, language)
 });
 
