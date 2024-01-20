@@ -8,15 +8,27 @@
 </head>
 <body>
     <div class="container">
-        <h1>README Generator</h1>
-        <form id="readmeForm">
-            <label for="userInput">Enter your project description:</label>
-            <textarea id="userInput" rows="4" cols="50"></textarea>
-            <br>
-            <input type="submit" value="Generate README" class="btn">
-        </form>
+      <h2>README Generator</h2>
+      <form>
+        <label>Enter your project description</label>
+        <textarea id="description"></textarea>
+
+        <div class="input-box">
+          <input type="text" id="language">
+          <label>Programming Language</label>
+        </div>
+        <a href="#" class="btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+      
+      </div>
     </div>
-  
-  <script src="script.js"></script>
+<!-- <script src="dotenv.js"></script> -->
+  <script src="./script.js"></script>
 </body>
 </html>
