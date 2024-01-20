@@ -21,12 +21,9 @@ app.use('/css',express.static(__dirname + '/public/css'))
 app.use('/js',express.static(__dirname + '/public/js'))
 
 
-
-
-
 app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
-  res.render('index', {readmeFile: ''})
+  res.render('index', {readmeContent: ''})
 });
   
 
@@ -42,7 +39,7 @@ app.post('/generate-readme', (req, res) => {
     });
     const readmeContent = data.choices[0].message.content;
     console.log(readmeContent)
-  res.render('index', { success: true, readmeFile: readmeContent })
+  res.render('index', { readmeContent })
   }
   generateReadme(description, language)
 });
