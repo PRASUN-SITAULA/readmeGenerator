@@ -68,7 +68,7 @@ color: #03e9f4;
 font-size: 13px;
 }
 
-.container form a {
+.container form button {
 position: relative;
 display: inline-block;
 padding: 10px 20px;
@@ -83,7 +83,7 @@ letter-spacing: 4px;
 border: 2px solid #03e9f4;
 }
 
-.container a:hover {
+.container button:hover {
 background: #03e9f4;
 color: #fff;
 border-radius: 5px;
@@ -93,7 +93,7 @@ box-shadow: 0 0 5px #03e9f4,
             0 0 100px #03e9f4;
 }
 
-.container a span {
+.container button span {
 position: absolute;
 display: block;
 }
@@ -109,4 +109,17 @@ textarea {
 
 label{
     color: #03e9f4;
+}
+
+.display-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 700px;
+padding: 40px;
+background: rgba(0,0,0,.5);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
 }
