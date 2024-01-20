@@ -9,12 +9,12 @@
 <body>
     <div class="container">
       <h2>README Generator</h2>
-      <form>
+      <form action="/generate-readme" method="post">
         <label>Enter your project description</label>
-        <textarea id="description"></textarea>
+        <textarea name="description" id="description"></textarea>
 
         <div class="input-box">
-          <input type="text" id="language">
+          <input name="language" type="text" id="language">
           <label>Programming Language</label>
         </div>
         <a href="#" class="btn">
@@ -29,6 +29,6 @@
       </div>
     </div>
 <!-- <script src="dotenv.js"></script> -->
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
