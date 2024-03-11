@@ -1,8 +1,8 @@
 
-<h3 align="center">A README file generator using openAI API.</h3>
+<h3 align="center">A README File Generator using OpenAI API.</h3>
 
 ## Description
-The Readme File Generator is web app that eases the process of creating README.md files for your projects. It prompts users for essential information such as project description and programming language used, and automatically generates a well-structured Markdown README file. 
+The Readme File Generator is a web app that eases the process of creating README.md files for your projects. It prompts users for essential information such as project description and programming language used, and automatically generates a well-structured Markdown README file. 
 
 ![landing](https://github.com/PRASUN-SITAULA/readmeGenerator/assets/89672957/af250e3c-0c8a-47da-a607-3e5793a3156e)
 
@@ -12,9 +12,9 @@ The Readme File Generator is web app that eases the process of creating README.m
 
 ## Key Features
 
-* User-Friendly: Easy-to-use web app for quick README file generation.
-* Customization: Tailor the generated README file by providing your project's description and programming language.
-* Markdown Format: Automatically formats the README file in Markdown.
+* **User-Friendly**: Easy-to-use web app for quick README file generation.
+* **Customization**: Tailor the generated README file by providing your project's description and programming languages used.
+* **Markdown Format**: Automatically formats the README file in Markdown.
 
 ## Installation Guide 
 
@@ -22,7 +22,7 @@ The Readme File Generator is web app that eases the process of creating README.m
 ```bash
 git clone https://github.com/PRASUN-SITAULA/readmeGenerator
 ```
-### Go into the repository
+### Open the repository
 ```bash
 cd readmeGenerator
 ```
@@ -31,7 +31,7 @@ cd readmeGenerator
 npm install
 ```
 ### Configuration
-- Obtain your OpenAI API key: Visit OpenAI to get your API key.
+- **Obtain your OpenAI API key**: Visit OpenAI to get your API key.
 
 - Create a .env file in the root directory of the project and add the following:
 ```bash
